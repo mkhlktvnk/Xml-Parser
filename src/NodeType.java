@@ -1,6 +1,6 @@
 enum NodeType {
     OPENING,
     CLOSING,
-    TAG_WITHOUT_BODY,
+    EMPTY,
     TAG_CONTENT
 }

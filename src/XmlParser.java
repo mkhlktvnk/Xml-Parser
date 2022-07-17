@@ -27,7 +27,7 @@ public class XmlParser {
 
             if (emptyTagMatcher.find()) {
                 String body = emptyTagMatcher.group();
-                xmlNodes.add(new XmlNode(body, NodeType.TAG_WITHOUT_BODY));
+                xmlNodes.add(new XmlNode(body, NodeType.EMPTY));
             } else if (openingTagMatcher.find()) {
                 String body = openingTagMatcher.group();
                 xmlNodes.add(new XmlNode(body, NodeType.OPENING));
